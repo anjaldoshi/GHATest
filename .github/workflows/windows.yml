@@ -4,6 +4,7 @@ on:
   push:
     paths:
     - "Source"
+    - ".github/workflows"
 
 jobs:
 
