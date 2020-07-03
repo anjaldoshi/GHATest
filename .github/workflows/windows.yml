@@ -2,9 +2,6 @@ name: Windows
 
 on: 
   push:
-    paths:
-    - "Source"
-    - ".github/workflows"
 
 jobs:
 
@@ -43,6 +40,7 @@ jobs:
       run: |
         msbuild Build/INSTALL.vcxproj -p:Configuration=Release -p:Platform=x64
       shell: cmd
+
 # TODO: Perform some basic testing before publishing...
 #    - name: test
 #      run: cd build && ctest
